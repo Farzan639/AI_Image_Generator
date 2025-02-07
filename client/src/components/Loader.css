@@ -1,0 +1,142 @@
+.loader-2 {
+    width: 72px; /* Increased by 20% from 60px */
+    height: 48px; /* Increased by 20% from 40px */
+    position: absolute;
+    scale: 0.65;
+    display: inline-block;
+    --base-color: #141315; /* use your base color */
+  }
+  .loader-2::before {
+    content: "";
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 43.2px; /* Increased by 20% from 36px */
+    height: 43.2px; /* Increased by 20% from 36px */
+    border-radius: 50%;
+    background-color: #c5c5c8;
+    background-image: radial-gradient(
+        circle 9.6px at 21.6px 21.6px, /* Increased by 20% from 8px and 18px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 4.8px at 21.6px 0px, /* Increased by 20% from 4px and 18px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 4.8px at 0px 21.6px, /* Increased by 20% from 4px and 18px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 4.8px at 43.2px 21.6px, /* Increased by 20% from 4px and 18px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 4.8px at 21.6px 43.2px, /* Increased by 20% from 4px and 18px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 4.8px at 36px 6px, /* Increased by 20% from 4px and 5px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 4.8px at 36px 6px, /* Increased by 20% from 4px and 5px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 4.8px at 36px 36px, /* Increased by 20% from 4px and 30px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 4.8px at 6px 36px, /* Increased by 20% from 4px and 30px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 4.8px at 6px 6px, /* Increased by 20% from 4px and 5px */
+        var(--base-color) 100%,
+        transparent 0
+      );
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    animation: rotationBack 2s linear infinite;
+  }
+  .loader-2::after {
+    content: "";
+    left: 42px; /* Increased by 20% from 35px */
+    top: 18px; /* Increased by 20% from 15px */
+    position: absolute;
+    width: 28.8px; /* Increased by 20% from 24px */
+    height: 28.8px; /* Increased by 20% from 24px */
+    border-radius: 50%;
+    background-color: #555556;
+    background-image: radial-gradient(
+        circle 6px at 14.4px 14.4px, /* Increased by 20% from 5px and 12px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 3px at 14.4px 0px, /* Increased by 20% from 2.5px and 12px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 3px at 0px 14.4px, /* Increased by 20% from 2.5px and 12px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 3px at 28.8px 14.4px, /* Increased by 20% from 2.5px and 12px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 3px at 14.4px 28.8px, /* Increased by 20% from 2.5px and 12px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 3px at 24px 3.6px, /* Increased by 20% from 2.5px and 3px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 3px at 24px 3.6px, /* Increased by 20% from 2.5px and 3px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 3px at 24px 24px, /* Increased by 20% from 2.5px and 20px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 3px at 3.6px 24px, /* Increased by 20% from 2.5px and 20px */
+        var(--base-color) 100%,
+        transparent 0
+      ),
+      radial-gradient(
+        circle 3px at 3.6px 3.6px, /* Increased by 20% from 2.5px and 3px */
+        var(--base-color) 100%,
+        transparent 0
+      );
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    animation: rotationBack 2s linear infinite reverse;
+  }
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }

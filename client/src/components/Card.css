@@ -1,0 +1,69 @@
+
+/* btn-3 */
+
+.btn-3-wrapper {
+    width: 125px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn-3 {
+    position: relative;
+    scale: 0.6;
+    width: 125px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    padding: 5px 10px;
+    background-color: #8f44fd;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  
+  .btn-3 .mysvg {
+    display: none;
+  }
+  
+  .btn-3-wrapper:hover .btn-3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.3s linear;
+  }
+  
+  .btn-3-wrapper:hover .texto {
+    display: none;
+  }
+  
+  .btn-3-wrapper:hover .mysvg {
+    display: inline;
+  }
+  
+  .btn-3-wrapper:hover .btn-3::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3.5px solid transparent;
+    border-top: 3.5px solid #fff;
+    border-right: 3.5px solid #fff;
+    border-radius: 50%;
+    animation: animateC 2s linear infinite;
+  }
+  
+  @keyframes animateC {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }

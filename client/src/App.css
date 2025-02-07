@@ -1,0 +1,190 @@
+
+
+
+/* Header */
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index:-100;
+}
+
+/* Create Button  */
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border-radius: calc(45px/2);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background: rgb(170,229,219);
+  background: linear-gradient(90deg, rgba(170,229,219,1) 0%, rgba(118,155,214,1) 26%, rgba(249,7,101,1) 100%);
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  font-size: 2.2em;
+  color: white;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.4em;
+  font-weight: 500;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.Btn:hover {
+  width: 125px;
+  transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 15px;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 15px;
+  
+}
+/* button click effect*/
+.Btn:active {
+  transform: translate(2px ,2px);
+}
+
+.brutalist-button.openai {
+  font-family: "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  display: flex;
+  align-items: center;
+  width: 240px; /* Increased width slightly */
+  height: 70px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border: 3px solid #ffffff;
+  outline: 3px solid #1a1a1a;
+  box-shadow: 8px 8px 0 #10a37f;
+  transition: all 0.2s ease-out;
+  padding: 0 12px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.brutalist-button.openai::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: all 0.6s ease;
+}
+
+.brutalist-button.openai:hover::before {
+  left: 100%;
+}
+
+.brutalist-button.openai:hover {
+  background-color: #301140;
+  border: 3px solid #000000;
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0 #020504;
+}
+
+.brutalist-button.openai:active {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 #000;
+}
+
+@keyframes spin-and-zoom {
+  0% {
+    transform: rotate(0deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.1);
+  }
+}
+
+.brutalist-button:hover .openai-icon {
+  animation: spin-and-zoom 1s linear infinite;
+}
+
+.openai-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.openai-icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+  fill: #000;
+  transition: all 0.3s ease;
+}
+
+.openai-text {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #dadada;
+  transition: all 0.3s ease;
+}
+
+.button-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.button-text span:first-child {
+  font-size: 9px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.button-text span:last-child {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.brutalist-button:hover .button-text span:last-child {
+  color: #2eae7f; /* Change this to your desired hover color */
+}
